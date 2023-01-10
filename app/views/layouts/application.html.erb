@@ -11,10 +11,12 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
 <script src="https://kit.fontawesome.com/a7f5a50e2d.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
 
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+<body data-bs-spy="scroll" data-bs-target="#navbar-ds">
+<div data-bs-spy="scroll" data-bs-target="#navbar-ds" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
   <% if  current_page?(root_path) ||current_page?(user_session_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path)%>
     <%else%>
@@ -29,5 +31,6 @@
     <%else%>
       <%= render "shared/footer"%>
     <%end%>
+    </div><!-- div navbar-scroll end -->
   </body>
 </html>

@@ -1,36 +1,10 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: $turquise;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.nav-link:hover {
-  color: $moutard;
-}
-
-//  .nav-tabs > .active a:hover {
-//   background-color: $darkgreen;
-// }
-
-
 .navbar-ds {
   justify-content: space-between;
   background: $turquise !important;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav-link {

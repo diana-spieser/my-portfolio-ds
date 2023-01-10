@@ -8,11 +8,26 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+<script src="https://kit.fontawesome.com/a7f5a50e2d.js" crossorigin="anonymous"></script>
   </head>
 
-  <body><%= render "shared/navbar" %>
-<%= render "shared/flashes" %>
 
-    <%= yield %>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+  <% if  current_page?(root_path) ||current_page?(user_session_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path)%>
+    <%else%>
+    <%= render "shared/navbar" %>
+    <%end%>
+    <%= render "shared/flashes" %>
+
+      <%= yield %>
+
+    <% if current_page?(root_path) || current_page?(user_session_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path)%>
+
+    <%else%>
+      <%= render "shared/footer"%>
+    <%end%>
   </body>
 </html>

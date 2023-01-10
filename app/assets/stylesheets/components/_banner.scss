@@ -1,0 +1,37 @@
+.cover-index {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://res.cloudinary.com/dygywvyiq/image/upload/v1673262466/Black_White_Minimalist_Digital_Marketing_LinkedIn_Banner_lfeqba.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  color: $bodycolor;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 467px;
+}
+.cover-index h1 {
+  margin: 0;
+  background-position: top;
+  color: $bodycolor;
+  font-size: 48px;
+  font-weight: bold;
+  // text-shadow: 3px 5px 6px #000000;
+  text-align: center;
+  margin-bottom: 5px;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.cover-index p {
+  font-size: 22px;
+  color: $contourgreen;
+  opacity: .9;
+  margin-bottom: 16px;
+  // font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-family: 'IBM Plex Mono', sans-serif;
+
+
+
+}
+.cover-index .p-title {
+  color:$moutard
+}

@@ -1,6 +1,10 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: $turquise;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,3 +14,34 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-link:hover {
+  color: $moutard;
+}
+
+//  .nav-tabs > .active a:hover {
+//   background-color: $darkgreen;
+// }
+
+
+.navbar-ds {
+  justify-content: space-between;
+  background: $turquise !important;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-link {
+  color: $darkgreen;
+}
+
+.nav-link:hover {
+  color: $bodycolor;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: $bodycolor;
+  background-color: $darkgreen;
+
+ }

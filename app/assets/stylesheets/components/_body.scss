@@ -1,0 +1,48 @@
+/* Utilities */
+body {
+  margin: 5px;
+  background-color: white;
+  font-family: 'IBM Plex Mono', sans-serif;
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+font-family: 'IBM Plex Mono', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+// .container {
+//   width: 900px;
+//   margin: auto;
+// }
+
+// /* Media queries */
+// @media(max-width: 900px) {
+//   .container {
+//     width: 700px;
+//   }
+// }
+// @media(max-width: 750px) {
+//   .container {
+//     width: 450px;
+//   }
+// }
+// @media(max-width: 500px) {
+//   .container {
+//     width: 350px;
+//   }
+//   .banner {
+//     padding: 50px 0;
+//   }
+//   .banner h1 {
+//     font-size: 30px;
+//   }
+//   .banner p {
+//     font-size: 20px;
+//   }
+// }

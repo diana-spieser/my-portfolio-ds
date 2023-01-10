@@ -121,6 +121,9 @@ section h3.section-subheading {
   clear: both;
 }
 
+.timeline>li .timeline-panel p.text-muted {
+  text-align: left;
+}
 .timeline>li .timeline-panel {
   float: right;
   position: relative;
@@ -290,81 +293,13 @@ section h3.section-subheading {
 
 
 
-.contact-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+input, select, optgroup, textarea {
+
+  max-width: 350px;
+  border-radius: 8px;
+  font-size: larger;
 }
 
-.affichage {
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 16px 16px;
-}
-
-.grid-card-show {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  margin-bottom: 80px;
-  margin-left: 40px;
-}
-.card-show {
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 16px 16px;
-  background-color: $tropicgreen;
-}
-.card-show p {
-text-align: justify;
-margin-bottom: 8px;
-}
-.booking-form {
-  width: 100%;
-  border-radius: 26px;
-}
-
-table {
-  background-color: $orange;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 4px;
-}
-.notification {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  background: $bodycolor;
-  padding: 16px 16px;
-  border: 1px solid rgb(235,235,235);
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.notification .notification-content {
-  flex-grow: 1;
-  padding: 0 24px;
-}
-
-.notification p {
-  margin: 0;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-.notification small {
-  color: #999999;
-  font-weight: bold;
-}
-
-.book {
-  text-align: center;
-}
-
-.hello {
-
+.atouts {
+list-style: none !important;
 }

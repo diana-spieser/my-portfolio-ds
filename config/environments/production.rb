@@ -71,6 +71,15 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'yourapp.heroku.com', # UPDATE THIS VALUE WITH YOUR OWN APP
+    :authentication => :plain,
+  }
+  ActionMailer::Base.delivery_method = :smtp
   config.i18n.fallbacks = true
 
   # Don't log any deprecations.

@@ -1,0 +1,5 @@
+meta_name: "Diana Spieser"
+meta_title: "Diana Spieser Portfolio"
+meta_description: "Développeuse web Full stack"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@Dianas57655855S"   # required for Twitter Cards

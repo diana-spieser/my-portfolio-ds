@@ -1,0 +1,18 @@
+
+{
+  "background_color": "white",
+  "description": "Diana Spieser - Développeuse web Full stack. Créative et entreprenante, j’aimerai mettre mes compétences en Front end  ( HTML, CSS, JS) et en Back end (Ruby on Rails) au service de votre entreprise!",
+  "display": "fullscreen",
+  "name": "Diana Spieser",
+  "icons": [
+    <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f} %>
+    <% files.each_with_index do |file, index| %>
+      <% match = file.match(/.+-(?<size>\d{2,3}x\d{2,3}).png/) %>
+      {
+        "src": "<%= image_path "icons/#{file}" %>",
+        "sizes": "<%= match && match[:size] %>",
+        "type": "image/png"
+      }<%= "," unless (files.size - 1) == index %>
+    <% end %>
+  ]
+}

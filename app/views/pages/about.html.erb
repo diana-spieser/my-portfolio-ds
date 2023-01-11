@@ -273,7 +273,7 @@
 </section>
 
 <!-- Contact-->
-<section  id="scrollspyHeading5">
+<div class= "section" id="scrollspyHeading5">
 <h2 class="text-center intro-heading">-Contact-</h2>
 
 <center><p>Actuellement à la recherche d'un nouvel emploi, je suis intéressée par les postes de :</p></center><br>
@@ -281,18 +281,13 @@
 <center><p>Développeuse full-stack avec possibilité d'une alternance d'une durée de 12 mois</p></center><br>
 <center><p>à Nice ou en Full remote</p></center>
 
-
-
-
-          <div style="width: 100%; height: 300px;" data-controller="map"
+<div style="width: 100%; height: 300px;" data-controller="map"
             data-map-markers-value="<%= @markers.to_json %>"
             data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
 
-<div class="contact-wrap" id="laforme">
+
+<div class="contact-wrap laforme">
   <center><div class="container contacter">
     <h4>SAY HELLO!👋</h4>
     <%= form_for @contact do |f| %>
@@ -310,13 +305,8 @@
       <%= f.submit 'Send Message', class: 'btn btn-blue' %>
     </div>
   <% end %>
-</div></center>
+</div>
 
     </div>
-    </div>
-  </div>
-    </div>
-    </section>
-</div><!-- div contact end -->
-  </div>
-    </div>
+
+</div>

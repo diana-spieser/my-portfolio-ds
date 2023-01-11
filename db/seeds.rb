@@ -35,7 +35,7 @@ project2.photo.attach(io: file2, filename: "myinvest.png", content_type: "image/
 project2.save!
 
 file3 = URI.open("https://res.cloudinary.com/dygywvyiq/image/upload/v1673193449/Capture_decran_2022-12-14_a_18.59.46_o9uagm.png")
-project3 = Project.new(title: "Botloc - trouvez le Robot parfait!", description: "Botlot est une web app de location de robots, le clone de l'application Airbnb crée avec deux de mes collègues du Wagon. En seulement 5 jours nous avons codé le site complet avec son  calendrier de réservation, une map interactive, page d'accueil, formulaire de recherche, page de résultats, formulaire de réservation qui calcule le prix total de la location. Ce site n'est malheureusement plus en ligne mais plusieurs captures d'écran sont disponibles et il sera gardée en local précieusement car c'est le premier site mis en production. ", link: "#")
+project3 = Project.new(title: "Botloc - trouvez le Robot parfait!", description: "Botloc est une web app de location de robots, le clone de l'application Airbnb crée avec deux de mes collègues du Wagon. En seulement 5 jours nous avons codé le site complet avec son  calendrier de réservation, une map interactive, page d'accueil, formulaire de recherche, page de résultats, formulaire de réservation qui calcule le prix total de la location. Ce site n'est malheureusement plus en ligne mais plusieurs captures d'écran sont disponibles et il sera gardée en local précieusement car c'est le premier site mis en production. ", link: "#")
 project3.photo.attach(io: file3, filename: "botloc.png", content_type: "image/png")
 project3.save!
 

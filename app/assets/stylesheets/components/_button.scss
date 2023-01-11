@@ -1,0 +1,10 @@
+.btn-blue {
+  background-color: $turquise;
+  color: $bodycolor;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.btn-blue:hover {
+  background-color: $darkgreen;
+  color: $bodycolor;
+}

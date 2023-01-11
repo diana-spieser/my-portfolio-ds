@@ -303,3 +303,18 @@ input, select, optgroup, textarea {
 .atouts {
 list-style: none !important;
 }
+.img-circle {
+  border-radius: 50%;
+  height: 100%;
+}
+
+ #formations {
+background-color: $tropicgreen !important;
+color: $bodycolor !important;
+}
+
+
+#formations .text-muted {
+  /* --bs-text-opacity: 1; */
+  color: $bodycolor !important;
+}

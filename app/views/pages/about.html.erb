@@ -9,7 +9,6 @@
 <!-- A propos -->
 <div class="container">
       <div class="section" id="scrollspyHeading1">
-        <%# <div class="cube-face cube-face-front"> %>
           <div class="intro-wrapper df fd-r">
             <div class="intro">
             <h1 class="intro-heading">-À  <span> Propos-</span> </h1>
@@ -128,14 +127,14 @@
         <p><%=project.description%></p>
         <% end %>
       </div>
-      <%= image_tag "logo.png", alt: "alttext", class: "card-trip-user avatar-bordered" %>
+      <%# <%= image_tag "logo.png", alt: "alttext", class: "card-trip-user avatar-bordered" %>
     </div>
   </div>
   <%end%>
   </div>
 </div><!-- end div container mon portfolio -->
 <!-- Mon Parcours-->
-<section id="experience">
+<section id="formations">
   <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -149,10 +148,11 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="https://res.cloudinary.com/dygywvyiq/image/upload/v1673273244/logo-ae2beeecce25d711f577b08deb9adfc6c02b673ed106b8d6c3da0f1721d9da33_nw2gcu.svg" alt="le wagon">
                             </div>
+
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2022 </h4>
-                                    <h4 class="subheading">Le Wagon Nice Batch #1056</h4>
+                                    <h4>2022  Le Wagon à Nice</h4><i class="fa-solid fa-circle-info" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Havaianas: Nice #Batch 1056"></i>
+                                    <%# <h4 class="subheading"> </h4> %>
                                 </div>
                                 <div class="timeline-body">
                                         <ul>
@@ -185,8 +185,8 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2017-2021</h4>
-                                    <h4 class="subheading">Store Manager Havaianas</h4>
+                                    <h4>2017-2021 Store Manager Havaianas</h4><i class="fa-solid fa-circle-info" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Havaianas: La célèbre marque de tongs brésilienne"></i>
+                                    <h4 class="subheading">
                                 </div>
                                 <div class="timeline-body">
                                     <ul>
@@ -221,8 +221,8 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2018 - 2019</h4>
-                                    <h4 class="subheading">Cycle Superieur en Management, <br /> EDHEC Business school Nice </h4>
+                                    <h4>2018 - 2019 CSM</h4><i class="fa-solid fa-circle-info" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Innovation managériale avec le Cycle Supérieur de Management - EDHEC CSM"></i>
+                                    <h4 class="subheading">EDHEC Business School Nice</h4>
                                 </div>
                                 <div class="timeline-body">
                                 <ul>
@@ -276,7 +276,6 @@
 <section  id="scrollspyHeading5">
 <h2 class="text-center intro-heading">-Contact-</h2>
 
-
 <center><p>Actuellement à la recherche d'un nouvel emploi, je suis intéressée par les postes de :</p></center><br>
 
 <center><p>Développeuse full-stack avec possibilité d'une alternance d'une durée de 12 mois</p></center><br>
@@ -319,7 +318,5 @@
     </div>
     </section>
 </div><!-- div contact end -->
-
   </div>
-
     </div>

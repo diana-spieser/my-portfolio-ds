@@ -63,10 +63,12 @@ transform: scale(1.5);
 }
 
 .card-project h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
   color: $moutard;
+  text-align: center;
+  margin-bottom: 5px;
 }
 .card-project h2:hover {
  color:#908F8B;
@@ -74,10 +76,11 @@ transform: scale(1.5);
 
 
 .card-project p {
-  font-size: 12px;
+  font-size: 16px;
   opacity: .7;
   margin: 0;
   color: $tropicgreen;
+  text-align: justify;
 }
 .card-project p:hover {
   font-weight: lighter;

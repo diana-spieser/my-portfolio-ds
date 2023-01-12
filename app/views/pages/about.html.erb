@@ -85,21 +85,14 @@
           <h4 class="service-heading">API, AJAX</h4>
           <p class="text-muted"></p>
         </div>
-        <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x text-primary"></i>
-          <i class="fa-regular fa-user fa-stack-1x fa-inverse"></i>
-        </span>
-          <h4 class="service-heading"> Core User Journey,User flow</h4>
-          <p class="text-muted">Figma</p>
-        </div>
       <div class="col-md-4">
         <span class="fa-stack fa-4x">
           <i class="fa fa-circle fa-stack-2x text-primary"></i>
           <i class="fa-brands fa-figma fa-stack-1x fa-inverse"></i>
         </span>
-          <h4 class="service-heading"> Wireframing, Mockups & Prototypage</h4>
-          <p class="text-muted">Figma</p>
+          <h4 class="service-heading"> Figma</h4>
+          <p class="text-muted" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
+            title="Mais aussi" data-bs-content="Création d'une personna, Core User Journey,User flow, Wireframing, Mockups "> Prototypage (voir plus)</p>
       </div>
       <div class="col-md-4">
         <span class="fa-stack fa-4x">
@@ -107,7 +100,16 @@
           <i class="fa fa-cloud-upload fa-stack-1x fa-inverse"></i>
         </span>
           <h4 class="service-heading">Cloud Deployment</h4>
-          <p class="text-muted">Heroku, DNS</p>
+          <p class="text-muted">Heroku, DNS, Hotjar</p>
+        </div>
+        <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+          <h4 class="service-heading"> Workflow</h4>
+          <p class="text-muted" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
+            title="Environnement de travail" data-bs-content="MacOs Ventura 13.1,Trello, Slack,Visual Studio Code">Github (voir plus)</p>
         </div>
       </div>
     </div><!-- en div class dection id skills -->
@@ -155,7 +157,7 @@
                                     <%# <h4 class="subheading"> </h4> %>
                                 </div>
                                 <div class="timeline-body">
-                                        <ul>
+                                        <ul id="ulproblem">
                                             <li>
                                                 <p class="text-muted">Conceptrice-développeuse d'applications web Niv (VI)</p>
                                             </li>
@@ -273,40 +275,34 @@
 </section>
 
 <!-- Contact-->
-<div class= "section" id="scrollspyHeading5">
-<h2 class="text-center intro-heading">-Contact-</h2>
-
-<center><p>Actuellement à la recherche d'un nouvel emploi, je suis intéressée par les postes de :</p></center><br>
-
-<center><p>Développeuse full-stack avec possibilité d'une alternance d'une durée de 12 mois</p></center><br>
-<center><p>à Nice ou en Full remote</p></center>
-
-<div style="width: 100%; height: 300px;" data-controller="map"
-            data-map-markers-value="<%= @markers.to_json %>"
-            data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
-
-
-<div class="contact-wrap laforme">
-  <center><div class="container contacter">
-    <h4>SAY HELLO!👋</h4>
-    <%= form_for @contact do |f| %>
-      <div class="col-md-6">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area input-field", placeholder: "Vôtre prénom" %></br>
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area input-field", placeholder: "hello@nicetomeetyou.fr" %></br>
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area input-field", placeholder: "Bonjour, Diana!" %></br>
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+  <div class= "section" id="scrollspyHeading5">
+    <h2 class="text-center intro-heading" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right" title="Mes Coordonnés "
+    data-bs-content="📞 +33695155744 dianaspieser@gmail.com">-Contact-</h2>
+      <center><p>Actuellement à la recherche d'un nouvel emploi, je suis intéressée par les postes de :</p></center>
+      <center><p>Développeuse full-stack avec possibilité d'une alternance d'une durée de 12 mois</p></center><br>
+      <center><p>à Nice ou en Full remote</p></center>
+      <div style="width: 100%; height: 300px;" data-controller="map"
+                  data-map-markers-value="<%= @markers.to_json %>"
+                  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+    <div class="contact-wrap laforme">
+        <center><div class="container contacter">
+          <h4>SAY HELLO!👋</h4>
+          <%= form_for @contact do |f| %>
+            <div class="col-md-6">
+            <%= f.label :name %></br>
+            <%= f.text_field  :name, required: true, class: "contact-form-text-area input-field", placeholder: "Vôtre prénom" %></br>
+            <%= f.label :email %></br>
+            <%= f.text_field :email, required: true, class: "contact-form-text-area input-field", placeholder: "hello@nicetomeetyou.fr" %></br>
+            <%= f.label :message %></br>
+            <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area input-field", placeholder: "Bonjour, Diana!" %></br>
+            <div class= "d-none">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+            <%= f.submit 'Send Message', class: 'btn btn-blue' %>
+          </div>
+          <% end %>
+        </div>
       </div>
-      <%= f.submit 'Send Message', class: 'btn btn-blue' %>
-    </div>
-  <% end %>
-</div>
-
-    </div>
-
 </div>

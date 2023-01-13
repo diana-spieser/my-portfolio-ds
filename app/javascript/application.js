@@ -4,3 +4,5 @@ import "./controllers"
 import CharacterCounter from "stimulus-character-counter"
 Stimulus.register("character-counter", CharacterCounter)
 import "bootstrap"
+import { Turbo } from "@hotwired/turbo-rails";
+Turbo.session.drive = false;

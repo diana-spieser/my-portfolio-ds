@@ -25,7 +25,7 @@ puts 'Seed: Diana was born!'
 puts 'Seed: Creating projects...'
 
 file1 = URI.open("https://res.cloudinary.com/dygywvyiq/image/upload/v1673177315/Capture_d_e%CC%81cran_2023-01-05_a%CC%80_18.03.25_vcpe0d.png")
-project1 = Project.new(title: "Joana Bossa -Site Vitrine - Bijoux faites à la main", description: "Site Web custom’ pour une merveilleuse créatrice de bijoux - Joana Bossa. C'est mon premier projet réalisé seule. Le site a une partie vitrine pour présenter ses collections et ses tarifs et une partie e-commerce pour pouvoir vendre quelques produits en ligne..(à venir). Rails admin a été intégré pour faciliter la gestion pour ma cliente, le formulaire de contact permet de rester en contact avec les clients, c'est un bon outil de marketing qui dynamise l'activité autour de la marque.", link: "https://joanabossajewelry.herokuapp.com/")
+project1 = Project.new(title: "Joana Bossa -Site Vitrine - Bijoux faites à la main", description: "Site Web custom’ pour une merveilleuse créatrice de bijoux - Joana Bossa. C'est mon premier projet réalisé seule. Le site a une partie vitrine pour présenter ses collections et ses tarifs et une partie e-commerce pour pouvoir vendre quelques produits en ligne..(à venir). Rails admin a été intégré pour faciliter la gestion pour ma cliente, le formulaire de contact permet de rester en contact avec les clients, c'est un bon outil de marketing qui dynamise l'activité autour de la marque.", link: "https://www.joanabossajewelry.com/")
 project1.photo.attach(io: file1, filename: "joanabossa.png", content_type: "image/png")
 project1.save!
 

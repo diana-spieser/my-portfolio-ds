@@ -26,9 +26,13 @@
     <%= csp_meta_tag %>
     <!-- Favicon -->
 <%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
+<!--From web app to PWA-->
  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <!-- Manifest Json -->
+
     <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <!-- app/views/shared/_ios_pwa_links.html.erb -->
       <%= render 'shared/ios_pwa_links' %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>

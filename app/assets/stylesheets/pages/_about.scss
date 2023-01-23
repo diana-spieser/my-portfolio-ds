@@ -122,14 +122,14 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-panel p.text-muted {
-  text-align: left;
+  text-align: justify;
 }
 .timeline>li .timeline-panel {
   float: right;
   position: relative;
   width: 100%;
   // padding: 0 20px 0 100px;
-  // text-align: left;
+  text-align: justify;
 }
 
 .timeline>li .timeline-panel:before {
@@ -169,7 +169,7 @@ section h3.section-subheading {
 .timeline>li.timeline-inverted>.timeline-panel {
   float: right;
   // padding: 0 20px 0 100px;
-  // text-align: left;
+  text-align: justify
 }
 
 .timeline>li.timeline-inverted>.timeline-panel:before {
@@ -218,7 +218,7 @@ section h3.section-subheading {
       float: left;
       width: 41%;
       padding: 0 20px 20px 30px;
-      text-align: right;
+      text-align: justify;
   }
 
   .timeline>li .timeline-image {
@@ -237,7 +237,7 @@ section h3.section-subheading {
   .timeline>li.timeline-inverted>.timeline-panel {
       float: right;
       padding: 0 30px 20px 20px;
-      text-align: left;
+      text-align: justify;
   }
 }
 
@@ -324,5 +324,5 @@ color: $bodycolor !important;
 }
 
 .paddingproblem {
-  padding-left: 36px;
+  padding-left: 38px;
 }

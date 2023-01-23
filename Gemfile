@@ -31,6 +31,7 @@ gem "cloudinary"
 gem "geocoder"
 gem "rails_admin", "3.0"
 gem 'mail_form', '~> 1.9'
+gem 'sitemap_generator', :require => 'sitemap_generator'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

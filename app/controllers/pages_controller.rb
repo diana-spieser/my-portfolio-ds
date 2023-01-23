@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :about]
+  skip_before_action :authenticate_user!, only: [ :home, :about, :sitemap]
 
   def home
     @projects = Project.all
@@ -28,5 +28,9 @@ class PagesController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: {diana: diana})
       }
     end
+  end
+
+  def sitemap
+    @projects = Project.all
   end
 end

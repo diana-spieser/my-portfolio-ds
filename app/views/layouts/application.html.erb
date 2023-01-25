@@ -69,7 +69,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-ds">
 <div data-bs-spy="scroll" data-bs-target="#navbar-ds" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-  <% if  current_page?(root_path) ||current_page?(user_session_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path)%>
+  <% if  current_page?(english_path) ||current_page?(about_path) ||current_page?(root_path) ||current_page?(user_session_path) || current_page?(new_user_registration_path) || current_page?(new_user_session_path)%>
     <%else%>
     <%= render "shared/navbar" %>
     <%end%>

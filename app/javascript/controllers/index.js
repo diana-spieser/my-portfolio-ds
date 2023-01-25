@@ -16,5 +16,8 @@ application.register("popover", PopoverController)
 import TooltipController from "./tooltip_controller"
 application.register("tooltip", TooltipController)
 
+import TypedJs1Controller from "./typed_js_1_controller"
+application.register("typed-js-1", TypedJs1Controller)
+
 import TypedJsController from "./typed_js_controller"
 application.register("typed-js", TypedJsController)
